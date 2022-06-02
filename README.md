@@ -3,7 +3,7 @@ in-progress....
 # Technical challenge assignment.
 
 1. Setup a Kubernetes cluster on an infrastructure of your choice ( EKS/AKS, ) or your own environment
-2.Install Istio service mesh on the Kubernetes Cluster created in step 1.
+2. Install Istio service mesh on the Kubernetes Cluster created in step 1.
 3. Debug and deploy a sample application (https://github.com/aztec-se-adp/crp2-tech-challenge) into the created cluster with service mesh enabled for the application.
 4. Implement a Python or Golang app / script to perform a periodically health-check for the cluster/apps  e.g.: usage of the pods (cpu,memory), status of pod/node ..etc without using kubectl if possible.
 5.cAll the tasks above must be managed in the automation manner / infrastructure as code / configuration as code using terraform.
