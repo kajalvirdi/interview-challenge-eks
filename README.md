@@ -20,12 +20,27 @@ in-progress....
 #### check terraform version
 terrsform verion
 
+## configure aws
+---aws configure 
+
 cd cluster-setup
 
 terraform init -upgrade
 terraform plan -out terraform.plan
 terraform apply terraform.plan
+
+
+#### Check status of the cluster
+aws eks --region us-east-2 describe-cluster --name demoCluster --query cluster.status  
+ ---> "ACTIVE"
+
+## Verify istio
+ kubectl get pods -n istio-system
+
+
 ```
+
+---aws configure 
 
 
  
