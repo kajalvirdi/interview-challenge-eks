@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Deployment 
+metadata:
+  labels:
+    test: liveness
+  name: liveness-exec
+spec:
+  containers:
+  - name: liveness
+    image: apache2-custom
+    livenessProbe:
+      exec:
+        command:
+        - python3.7
+        - /var/liveness_probe.py
+      initialDelaySeconds: 5
+      periodSeconds: 30
